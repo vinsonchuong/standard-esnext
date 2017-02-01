@@ -1,0 +1,43 @@
+{
+  "name": "standard-esnext",
+  "version": "1.0.0",
+  "description": "JavaScript Standard Style for ES.Next",
+  "keywords": [
+    "standard",
+    "eslint",
+    "esnext"
+  ],
+  "homepage": "https://github.com/vinsonchuong/standard-esnext",
+  "bugs": "https://github.com/vinsonchuong/standard-esnext/issues",
+  "license": "MIT",
+  "author": "Vinson Chuong <vinsonchuong@gmail.com>",
+  "files": [
+    "LICENSE",
+    "README.md",
+    "bin/standard.js",
+    "index.js",
+    "options.js",
+    "eslintrc.json"
+  ],
+  "main": "index.js",
+  "bin": {
+    "standard": "./bin/standard.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vinsonchuong/standard-esnext"
+  },
+  "scripts": {},
+  "dependencies": {
+    "babel-eslint": "*",
+    "eslint": "*",
+    "eslint-config-standard": "*",
+    "eslint-config-standard-jsx": "*",
+    "eslint-plugin-import": "*",
+    "eslint-plugin-promise": "*",
+    "eslint-plugin-react": "*",
+    "eslint-plugin-standard": "*",
+    "standard-engine": "*"
+  },
+  "devDependencies": {}
+}
