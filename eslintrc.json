@@ -4,6 +4,11 @@
     "standard-jsx",
     "plugin:import/recommended"
   ],
+  "settings": {
+    "import/resolver": {
+      "babel-module": {}
+    }
+  },
   "rules": {
     "class-methods-use-this": "error",
     "prefer-promise-reject-errors": "error",
