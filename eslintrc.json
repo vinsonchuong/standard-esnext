@@ -5,6 +5,10 @@
     "plugin:import/recommended",
     "plugin:flowtype/recommended"
   ],
+  "plugins": [
+    "import",
+    "flowtype"
+  ],
   "settings": {
     "import/resolver": {
       "babel-module": {}
