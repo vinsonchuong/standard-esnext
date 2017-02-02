@@ -2,7 +2,8 @@
   "extends": [
     "standard",
     "standard-jsx",
-    "plugin:import/recommended"
+    "plugin:import/recommended",
+    "plugin:flowtype/recommended"
   ],
   "settings": {
     "import/resolver": {
