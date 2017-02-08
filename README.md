@@ -22,4 +22,6 @@ documentation.
 * `babel-eslint` enables linting of experimental features as well
   as extensions to the language like Flow.
 * `eslint-plugin-import` checks validity of `import` and `export` statements.
-  Aliases defined using `babel-plugin-module-resolver` are supported
+  Aliases defined using `babel-plugin-module-resolver` are supported. Package
+  name aliases defined by `babel-plugin-package-name-import` are also
+  supported.
