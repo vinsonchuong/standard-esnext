@@ -29,8 +29,9 @@
   },
   "scripts": {},
   "dependencies": {
+    "babel-core": "*",
     "babel-eslint": "*",
-    "babel-plugin-module-resolver": "^2.5.0",
+    "babel-plugin-module-resolver": "*",
     "eslint": "*",
     "eslint-config-standard": "*",
     "eslint-config-standard-jsx": "*",
