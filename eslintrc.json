@@ -32,7 +32,7 @@
     "flowtype/no-dupe-keys": "error",
     "flowtype/no-primitive-constructor-types": "error",
     "flowtype/no-weak-types": "error",
-    "flowtype/object-type-delimite": "error",
+    "flowtype/object-type-delimiter": "error",
     "flowtype/semi": ["error", "never"]
   }
 }
