@@ -32,7 +32,7 @@
     "babel-core": "*",
     "babel-eslint": "*",
     "babel-plugin-module-resolver": "*",
-    "eslint": "~3.12.1",
+    "eslint": "3.15.0",
     "eslint-config-standard": "*",
     "eslint-config-standard-jsx": "*",
     "eslint-import-resolver-babel-module": "*",
