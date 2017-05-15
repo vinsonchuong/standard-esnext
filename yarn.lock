@@ -642,6 +642,10 @@ find-babel-config@^1.0.1:
     json5 "^0.5.0"
     path-exists "^3.0.0"
 
+find-package-json@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/find-package-json/-/find-package-json-1.0.0.tgz#ed6efb0bcc905e839173e53d47920711e38b9561"
+
 find-root@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/find-root/-/find-root-1.0.0.tgz#962ff211aab25c6520feeeb8d6287f8f6e95807a"
