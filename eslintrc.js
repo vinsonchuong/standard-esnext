@@ -8,6 +8,7 @@ const config = {
     'plugin:flowtype/recommended'
   ],
   plugins: [
+    'babel',
     'import',
     'flowtype'
   ],
@@ -34,7 +35,7 @@ const config = {
     'semi': 'off',
 
     'babel/new-cap': 'error',
-    'babel/semi': 'error',
+    'babel/semi': ['error', 'never'],
 
     'flowtype/delimiter-dangle': 'error',
     'flowtype/no-dupe-keys': 'error',
