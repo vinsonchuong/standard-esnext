@@ -29,6 +29,7 @@
     "eslint-config-standard-jsx": "*",
     "eslint-import-resolver-babel-module": "*",
     "eslint-import-resolver-package-name-import": "*",
+    "eslint-plugin-babel": "*",
     "eslint-plugin-flowtype": "*",
     "eslint-plugin-import": "*",
     "eslint-plugin-node": "*",

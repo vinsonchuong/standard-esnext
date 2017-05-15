@@ -21,6 +21,7 @@ const config = {
     'class-methods-use-this': 'error',
     'prefer-promise-reject-errors': 'error',
     'object-shorthand': 'error',
+    'new-cap': 'off',
     'no-duplicate-imports': 'off',
     'no-var': 'error',
     'prefer-const': 'error',
@@ -30,6 +31,10 @@ const config = {
     'prefer-rest-params': 'error',
     'prefer-spread': 'error',
     'no-param-reassign': 'error',
+    'semi': 'off',
+
+    'babel/new-cap': 'error',
+    'babel/semi': 'error',
 
     'flowtype/delimiter-dangle': 'error',
     'flowtype/no-dupe-keys': 'error',
