@@ -11,14 +11,6 @@
   "bugs": "https://github.com/vinsonchuong/standard-esnext/issues",
   "license": "MIT",
   "author": "Vinson Chuong <vinsonchuong@gmail.com>",
-  "files": [
-    "LICENSE",
-    "README.md",
-    "bin/standard.js",
-    "index.js",
-    "options.js",
-    "eslintrc.json"
-  ],
   "main": "index.js",
   "bin": {
     "standard": "./bin/standard.js"
