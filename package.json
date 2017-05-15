@@ -43,7 +43,6 @@
     "eslint-plugin-promise": "*",
     "eslint-plugin-react": "*",
     "eslint-plugin-standard": "*",
-    "find-package-json": "^1.0.0",
     "standard-engine": "*"
   },
   "devDependencies": {}

@@ -1,17 +1,24 @@
-const findPackageJson = require('find-package-json')
+const fs = require('fs')
+const path = require('path')
+
+function findPackageJson (workingDirectory) {
+  const packageJsonPath = path.join(workingDirectory, 'package.json')
+  if (fs.existsSync(packageJsonPath)) {
+    return require(packageJsonPath)
+  } else {
+    findPackageJson(path.resolve(workingDirectory, '..'))
+  }
+}
 
 let cachedPackageJson
 function getPackageJson () {
   if (!cachedPackageJson) {
-    cachedPackageJson = findPackageJson().next().value
-    if (!cachedPackageJson.devDependencies) {
-      cachedPackageJson.devDependencies = {}
-    }
+    cachedPackageJson = findPackageJson(process.cwd())
   }
   return cachedPackageJson
 }
 
 module.exports = function (devDependencyName) {
   const packageJson = getPackageJson()
-  return devDependencyName in packageJson.devDependencies
+  return devDependencyName in (packageJson.devDependencies || {})
 }
