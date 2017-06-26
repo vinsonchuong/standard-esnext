@@ -5,13 +5,12 @@ const config = {
     'standard',
     'standard-jsx',
     'plugin:import/recommended',
-    'plugin:flowtype/recommended'
+    'plugin:flowtype/recommended',
+    'prettier',
+    'prettier/flowtype',
+    'prettier/react'
   ],
-  plugins: [
-    'babel',
-    'import',
-    'flowtype'
-  ],
+  plugins: ['babel', 'import', 'flowtype', 'prettier'],
   settings: {
     'import/resolver': {
       'babel-module': {},
@@ -32,7 +31,7 @@ const config = {
     'prefer-rest-params': 'error',
     'prefer-spread': 'error',
     'no-param-reassign': 'error',
-    'semi': 'off',
+    semi: 'off',
 
     'babel/new-cap': 'error',
     'babel/semi': ['error', 'never'],
@@ -45,7 +44,10 @@ const config = {
     'flowtype/semi': ['error', 'never'],
 
     'import/first': 'error',
-    'import/no-duplicates': 'error'
+    'import/no-duplicates': 'error',
+    'import/unambiguous': 'off',
+
+    'prettier/prettier': ['error', { semi: false, singleQuote: true }]
   }
 }
 

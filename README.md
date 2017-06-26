@@ -26,6 +26,7 @@ documentation.
   Aliases defined using `babel-plugin-module-resolver` are supported. Package
   name aliases defined by `babel-plugin-package-name-import` are also
   supported.
+* `eslint-plugin-prettier` ensures consistent and uniform formatting
 
 Note that because Flow already resolves and validates imports, if the `flow-bin`
 package is installed, overlapping rules from `eslint-plugin-import` will be

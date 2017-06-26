@@ -25,6 +25,7 @@
     "babel-eslint": "*",
     "babel-plugin-module-resolver": "*",
     "eslint": "*",
+    "eslint-config-prettier": "*",
     "eslint-config-standard": "*",
     "eslint-config-standard-jsx": "*",
     "eslint-import-resolver-babel-module": "*",
@@ -33,9 +34,11 @@
     "eslint-plugin-flowtype": "*",
     "eslint-plugin-import": "*",
     "eslint-plugin-node": "*",
+    "eslint-plugin-prettier": "*",
     "eslint-plugin-promise": "*",
     "eslint-plugin-react": "*",
     "eslint-plugin-standard": "*",
+    "prettier": "*",
     "standard-engine": "*"
   },
   "devDependencies": {}

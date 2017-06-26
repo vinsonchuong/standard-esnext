@@ -6,7 +6,7 @@ module.exports = {
   version: pkg.version,
   homepage: pkg.homepage,
   bugs: pkg.bugs,
-  eslint: eslint,
+  eslint,
   cmd: 'standard',
   tagline: 'Use ES.Next Standard Style',
   eslintConfig: {
