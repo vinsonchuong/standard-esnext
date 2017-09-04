@@ -14,5 +14,10 @@ module.exports = {
   },
   cwd: '',
 
-  parser: 'babel-eslint'
+  parser: 'babel-eslint',
+
+  parseOpts(opts) {
+    opts.ignore = opts.ignore.concat('flow-typed/**')
+    return opts
+  }
 }
