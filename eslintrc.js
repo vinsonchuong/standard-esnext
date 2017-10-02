@@ -1,4 +1,4 @@
-const hasDevDependency = require('./hasDevDependency')
+const isInstalled = require('./isInstalled')
 
 const config = {
   extends: [
@@ -51,7 +51,7 @@ const config = {
   }
 }
 
-if (hasDevDependency('flow-bin')) {
+if (isInstalled('flow-bin')) {
   Object.assign(config.rules, {
     'import/no-unresolved': 'off',
     'import/named': 'off',
