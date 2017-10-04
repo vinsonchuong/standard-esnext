@@ -41,8 +41,5 @@
     "prettier": ">=1.7.3",
     "standard-engine": ">=7.1.0"
   },
-  "devDependencies": {},
-  "standard": {
-    "envs": ["mocha"]
-  }
+  "devDependencies": {}
 }
