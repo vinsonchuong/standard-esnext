@@ -7,6 +7,7 @@ const config = {
     'plugin:import/recommended',
     'plugin:flowtype/recommended',
     'prettier',
+    'prettier/standard',
     'prettier/flowtype',
     'prettier/react'
   ],
@@ -36,7 +37,6 @@ const config = {
     'babel/new-cap': 'error',
     'babel/semi': ['error', 'never'],
 
-    'flowtype/delimiter-dangle': 'error',
     'flowtype/no-dupe-keys': 'error',
     'flowtype/no-primitive-constructor-types': 'error',
     'flowtype/no-weak-types': 'error',
