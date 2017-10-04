@@ -13,8 +13,8 @@ const config = {
   plugins: ['babel', 'import', 'flowtype', 'prettier'],
   settings: {
     'import/resolver': {
-      'babel-module': {},
-      'package-name-import': {}
+      [require.resolve('eslint-import-resolver-babel-module')]: {},
+      [require.resolve('eslint-import-resolver-package-name-import')]: {}
     }
   },
   rules: {
