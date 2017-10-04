@@ -5,13 +5,11 @@ const config = {
     'standard',
     'standard-jsx',
     'plugin:import/recommended',
-    'plugin:flowtype/recommended',
     'prettier',
     'prettier/standard',
-    'prettier/flowtype',
     'prettier/react'
   ],
-  plugins: ['babel', 'import', 'flowtype', 'prettier'],
+  plugins: ['babel', 'import', 'prettier'],
   settings: {
     'import/resolver': {
       [require.resolve('eslint-import-resolver-babel-module')]: {},
@@ -35,10 +33,6 @@ const config = {
 
     'babel/new-cap': 'error',
 
-    'flowtype/no-dupe-keys': 'error',
-    'flowtype/no-primitive-constructor-types': 'error',
-    'flowtype/no-weak-types': 'error',
-
     'import/first': 'error',
     'import/no-duplicates': 'error',
     'import/unambiguous': 'off',
@@ -48,7 +42,17 @@ const config = {
 }
 
 if (isInstalled('flow-bin')) {
+  config.extends.push('plugin:flowtype/recommended', 'prettier/flowtype')
+
+  config.plugins.push('flowtype')
+
   Object.assign(config.rules, {
+    'flowtype/no-dupe-keys': 'error',
+    'flowtype/no-primitive-constructor-types': 'error',
+    'flowtype/no-unused-expressions': 'error',
+    'flowtype/no-weak-types': 'error',
+    'flowtype/require-valid-file-annotation': ['error', 'always'],
+
     'import/no-unresolved': 'off',
     'import/named': 'off',
     'import/namespace': 'off',
