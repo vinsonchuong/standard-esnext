@@ -32,16 +32,12 @@ const config = {
     'prefer-rest-params': 'error',
     'prefer-spread': 'error',
     'no-param-reassign': 'error',
-    semi: 'off',
 
     'babel/new-cap': 'error',
-    'babel/semi': ['error', 'never'],
 
     'flowtype/no-dupe-keys': 'error',
     'flowtype/no-primitive-constructor-types': 'error',
     'flowtype/no-weak-types': 'error',
-    'flowtype/object-type-delimiter': 'error',
-    'flowtype/semi': ['error', 'never'],
 
     'import/first': 'error',
     'import/no-duplicates': 'error',
