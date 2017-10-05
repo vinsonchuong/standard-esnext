@@ -2,12 +2,10 @@ const isInstalled = require('./isInstalled')
 
 const config = {
   extends: [
-    'standard',
-    'standard-jsx',
     'plugin:import/recommended',
+    'standard',
     'prettier',
-    'prettier/standard',
-    'prettier/react'
+    'prettier/standard'
   ],
   plugins: ['import', 'prettier'],
   settings: {
@@ -51,6 +49,31 @@ if (isInstalled('flow-bin')) {
     'import/named': 'off',
     'import/namespace': 'off',
     'import/default': 'off'
+  })
+}
+
+if (isInstalled('react')) {
+  config.extends.push(
+    'plugin:react/recommended',
+    'standard-jsx',
+    'prettier/react'
+  )
+
+  Object.assign(config.rules, {
+    'react/prop-types': 'off',
+
+    'react/jsx-handler-names': 'error',
+    'react/jsx-no-bind': 'error',
+    'react/jsx-pascal-case': 'error',
+    'react/no-array-index-key': 'error',
+    'react/no-did-mount-set-state': 'error',
+    'react/no-did-update-set-state': 'error',
+    'react/no-redundant-should-component-update': 'error',
+    'react/no-typos': 'error',
+    'react/no-will-update-set-state': 'error',
+    'react/sort-comp': 'error',
+    'react/style-prop-object': 'error',
+    'react/void-dom-elements-no-children': 'error'
   })
 }
 
