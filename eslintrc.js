@@ -9,7 +9,7 @@ const config = {
     'prettier/standard',
     'prettier/react'
   ],
-  plugins: ['babel', 'import', 'prettier'],
+  plugins: ['import', 'prettier'],
   settings: {
     'import/resolver': {
       [require.resolve('eslint-import-resolver-babel-module')]: {},
@@ -18,9 +18,7 @@ const config = {
   },
   rules: {
     'class-methods-use-this': 'error',
-    'prefer-promise-reject-errors': 'error',
     'object-shorthand': 'error',
-    'new-cap': 'off',
     'no-duplicate-imports': 'off',
     'no-var': 'error',
     'prefer-const': 'error',
@@ -30,8 +28,6 @@ const config = {
     'prefer-rest-params': 'error',
     'prefer-spread': 'error',
     'no-param-reassign': 'error',
-
-    'babel/new-cap': 'error',
 
     'import/unambiguous': 'off',
 
