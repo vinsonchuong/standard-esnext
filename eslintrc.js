@@ -55,6 +55,9 @@ if (isInstalled('flow-bin')) {
 if (isInstalled('ava')) {
   config.extends.push('plugin:ava/recommended')
   config.plugins.push('ava')
+  Object.assign(config.rules, {
+    'ava/no-ignored-test-files': 'off'
+  })
 }
 
 if (isInstalled('react')) {
