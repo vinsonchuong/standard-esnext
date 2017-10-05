@@ -33,8 +33,6 @@ const config = {
 
     'babel/new-cap': 'error',
 
-    'import/first': 'error',
-    'import/no-duplicates': 'error',
     'import/unambiguous': 'off',
 
     'prettier/prettier': ['error', { semi: false, singleQuote: true }]
