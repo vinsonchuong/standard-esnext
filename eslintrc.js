@@ -68,6 +68,8 @@ if (isInstalled('react')) {
   )
 
   Object.assign(config.rules, {
+    'jsx-quotes': 'off',
+
     'react/prop-types': 'off',
 
     'react/jsx-handler-names': 'error',
