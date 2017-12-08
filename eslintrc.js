@@ -27,6 +27,7 @@ const config = {
     'prefer-spread': 'error',
     'no-param-reassign': 'error',
 
+    'import/no-named-as-default': 'off',
     'import/unambiguous': 'off',
 
     'prettier/prettier': ['error', { semi: false, singleQuote: true }]
