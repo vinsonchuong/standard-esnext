@@ -30,6 +30,8 @@ const config = {
     'import/no-named-as-default': 'off',
     'import/unambiguous': 'off',
 
+    'node/no-deprecated-api': 'off',
+
     'prettier/prettier': ['error', { semi: false, singleQuote: true }]
   }
 }
