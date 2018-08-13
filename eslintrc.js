@@ -72,12 +72,12 @@ if (isInstalled('react')) {
   )
 
   Object.assign(config.rules, {
+    'class-methods-use-this': 'off',
     'jsx-quotes': 'off',
 
     'react/prop-types': 'off',
 
     'react/jsx-handler-names': 'error',
-    'react/jsx-no-bind': 'error',
     'react/jsx-pascal-case': 'error',
     'react/no-array-index-key': 'error',
     'react/no-did-mount-set-state': 'error',
