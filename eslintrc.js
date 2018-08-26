@@ -1,4 +1,4 @@
-const isInstalled = require('./isInstalled')
+const getInstalledPackage = require('./getInstalledPackage')
 
 const config = {
   extends: [
@@ -36,7 +36,8 @@ const config = {
   }
 }
 
-if (isInstalled('flow-bin')) {
+const flowVersion = getInstalledPackage('flow-bin')
+if (flowVersion) {
   config.extends.push('plugin:flowtype/recommended', 'prettier/flowtype')
 
   config.plugins.push('flowtype')
@@ -55,7 +56,7 @@ if (isInstalled('flow-bin')) {
   })
 }
 
-if (isInstalled('ava')) {
+if (getInstalledPackage('ava')) {
   config.extends.push('plugin:ava/recommended')
   config.plugins.push('ava')
   Object.assign(config.rules, {
@@ -64,12 +65,25 @@ if (isInstalled('ava')) {
   })
 }
 
-if (isInstalled('react')) {
+const reactVersion = getInstalledPackage('react')
+if (reactVersion) {
   config.extends.push(
     'plugin:react/recommended',
     'standard-jsx',
     'prettier/react'
   )
+
+  Object.assign(config.settings, {
+    react: {
+      createClass: 'createReactClass',
+      pragma: 'React',
+      version: reactVersion
+    }
+  })
+
+  if (flowVersion) {
+    Object.assign(config.settings.react, { flowVersion })
+  }
 
   Object.assign(config.rules, {
     'class-methods-use-this': 'off',
