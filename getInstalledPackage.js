@@ -9,8 +9,8 @@ module.exports = function(packageName) {
   }
 
   try {
-    const packageJson = fs.readFileSync(
-      path.resolve('node_modules', packageName, 'package.json')
+    const packageJson = JSON.parse(
+      fs.readFileSync(path.resolve('node_modules', packageName, 'package.json'))
     )
     cache[packageName] = packageJson.version
     return packageJson.version
