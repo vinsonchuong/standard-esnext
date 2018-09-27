@@ -60,6 +60,7 @@ if (getInstalledPackage('ava')) {
   config.extends.push('plugin:ava/recommended')
   config.plugins.push('ava')
   Object.assign(config.rules, {
+    'ava/no-async-fn-without-await': 'off',
     'ava/no-ignored-test-files': 'off',
     'ava/use-test': 'off'
   })
