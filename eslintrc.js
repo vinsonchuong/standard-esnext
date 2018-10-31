@@ -46,7 +46,6 @@ if (flowVersion) {
     'flowtype/no-dupe-keys': 'error',
     'flowtype/no-primitive-constructor-types': 'error',
     'flowtype/no-unused-expressions': 'error',
-    'flowtype/no-weak-types': 'error',
     'flowtype/require-valid-file-annotation': ['error', 'always'],
 
     'import/no-unresolved': 'off',
