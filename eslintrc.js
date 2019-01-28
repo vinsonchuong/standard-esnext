@@ -52,7 +52,12 @@ if (flowVersion) {
     'import/no-unresolved': 'off',
     'import/named': 'off',
     'import/namespace': 'off',
-    'import/default': 'off'
+    'import/default': 'off',
+
+    'prettier/prettier': [
+      'error',
+      { parser: 'flow', semi: false, singleQuote: true }
+    ]
   })
 }
 
