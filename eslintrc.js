@@ -16,6 +16,7 @@ const config = {
   },
   rules: {
     'class-methods-use-this': 'error',
+    'lines-between-class-members': 'off',
     'object-shorthand': 'error',
     'no-duplicate-imports': 'off',
     'no-var': 'error',
